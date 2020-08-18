@@ -28,6 +28,7 @@ class SetTime extends Component {
           onChange={this.onTimeChange}
           defaultValue={time}
           disabled={this.props.enabled}
+          min={0}
         />
         <button
           className={styles.button}
