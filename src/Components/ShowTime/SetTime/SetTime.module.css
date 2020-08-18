@@ -1,0 +1,47 @@
+.root {
+  display: grid;
+
+  grid-template-columns: max-content auto max-content;
+  gap: 0.5rem;
+  background: white;
+  align-items: center;
+}
+
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.button {
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background: black;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  background: rgb(70, 70, 70);
+}
+
+.button:active {
+  background: rgb(20, 20, 20);
+}
+
+.button:disabled {
+  background: rgb(200, 200, 200);
+  color: white;
+  cursor: not-allowed;
+}
