@@ -45,12 +45,6 @@ export function toggleTime() {
   return model.get()
 }
 
-export function clearTime() {
-  model.attach({ time: 0, paused: true })
-
-  return model.get()
-}
-
 export function getTime() {
   return model.get()
 }
